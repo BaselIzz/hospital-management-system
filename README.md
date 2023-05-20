@@ -3,7 +3,7 @@
 
 ## Erd DIgram 4 core  of hospital-mangment- System 
 
-![Untitled Diagram (1)](https://github.com/BaselIzz/hospital-management-system/assets/102633816/b9bcfe26-50d5-43fa-8368-eb04d1a90fc1)
+![Untitled Diagram (2)](https://github.com/BaselIzz/hospital-management-system/assets/102633816/806fb9b7-f9d1-48c9-a91c-fda3cff9c47e)
 
 ## Java Spring 
 
