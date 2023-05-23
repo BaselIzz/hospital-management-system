@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "51f86d73-69dd-4f80-a7c3-c3f957a71524",
+		"name": "Patient",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetallPatient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Patient"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetallPatient",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Patient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Patient"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 May 2023 01:13:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n        \"name\": \"basel izz\",\n        \"address\": \"123 Main Street\",\n        \"contentnumber\": \"1234567890\",\n        \"note\": \"Some notes\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 2,\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n        \"name\": \"Sammer\",\n        \"address\": \"123 Main Street\",\n        \"contentnumber\": \"1234567890\",\n        \"note\": \"Some notes\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 3,\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n        \"name\": \"ameera\",\n        \"address\": \"123 Main Street\",\n        \"contentnumber\": \"1234567890\",\n        \"note\": \"Some notes\",\n        \"gender\": \"Female\"\n    },\n    {\n        \"id\": 4,\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n        \"name\": \"Basllo\",\n        \"address\": \"123 Main Street\",\n        \"contentnumber\": \"1234567890\",\n        \"note\": \"1234567890\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 6,\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n        \"name\": \"Basllo\",\n        \"address\": \"123 Main Street\",\n        \"contentnumber\": \"1234567890\",\n        \"note\": \"1234567890\",\n        \"gender\": \"Male\"\n    },\n    {\n        \"id\": 7,\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n        \"name\": \"Safya\",\n        \"address\": \"123 Main Street\",\n        \"contentnumber\": \"1234567890\",\n        \"note\": \"1234567890\",\n        \"gender\": \"Female\"\n    },\n    {\n        \"id\": 8,\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n        \"name\": \"karema\",\n        \"address\": \"123 Main Street\",\n        \"contentnumber\": \"1234567890\",\n        \"note\": \"1234567890\",\n        \"gender\": \"Female\"\n    },\n    {\n        \"id\": 10,\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n        \"name\": \"said\",\n        \"address\": \"123 Main Street\",\n        \"contentnumber\": \"1234567890\",\n        \"note\": \"1234567890\",\n        \"gender\": \"Male\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\r\n        \"name\": \"said\",\r\n        \"address\": \"123 Main Street\",\r\n        \"contentnumber\": \"1234567890\",\r\n        \"note\": \"Some notes\",\r\n        \"gender\": \"0\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Patient"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \r\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\r\n        \"name\": \"said\",\r\n        \"address\": \"123 Main Street\",\r\n        \"contentnumber\": \"1234567890\",\r\n        \"note\": \"Some notes\",\r\n        \"gender\": \"0\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Patient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Patient"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 May 2023 01:13:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 11,\n    \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n    \"name\": \"said\",\n    \"address\": \"123 Main Street\",\n    \"contentnumber\": \"1234567890\",\n    \"note\": \"1234567890\",\n    \"gender\": \"Male\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\r\n        \"name\": \"basel\",\r\n        \"address\": \"123 Main Street\",\r\n        \"contentnumber\": \"1234567890\",\r\n        \"note\": \"1234567890\",\r\n        \"gender\": \"0\"\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/Patient/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Patient",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \r\n        \"dob\": \"1990-01-01T00:00:00.000+00:00\",\r\n        \"name\": \"basel\",\r\n        \"address\": \"123 Main Street\",\r\n        \"contentnumber\": \"1234567890\",\r\n        \"note\": \"1234567890\",\r\n        \"gender\": \"0\"\r\n    },",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/Patient/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Patient",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 May 2023 01:13:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 10,\n    \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n    \"name\": \"basel\",\n    \"address\": \"123 Main Street\",\n    \"contentnumber\": \"1234567890\",\n    \"note\": \"1234567890\",\n    \"gender\": \"Male\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Patient/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Patient",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Patient/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Patient",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 May 2023 01:13:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Deleted successfully"
+				}
+			]
+		},
+		{
+			"name": "Get PaitentBy id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/Patient/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Patient",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get PaitentBy id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/Patient/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"Patient",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 May 2023 01:13:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"dob\": \"1990-01-01T00:00:00.000+00:00\",\n    \"name\": \"ameera\",\n    \"address\": \"123 Main Street\",\n    \"contentnumber\": \"1234567890\",\n    \"note\": \"Some notes\",\n    \"gender\": \"Female\"\n}"
+				}
+			]
+		}
+	]
+}
